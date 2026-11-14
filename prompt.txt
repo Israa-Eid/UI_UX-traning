@@ -1,0 +1,293 @@
+# Training 2026 Dashboard — Complete AI Development Prompt
+
+Recreate the **Training 2026 Dashboard** shown in the reference video (`uiTask.mp4`) as accurately as possible, including its layout, colors, proportions, animations, responsiveness, and interactive functionality.
+
+Complete the entire task in a single generation using one comprehensive prompt.
+
+## 1. Technical Requirements
+
+- Generate one complete, standalone `index.html` file.
+- Include all HTML, CSS, and vanilla JavaScript inside the same file.
+- Use CSS Grid for the main page layout and Flexbox where appropriate.
+- Use semantic HTML5 elements such as `header`, `nav`, `aside`, `main`, `section`, `article`, and `footer`.
+- Use no more than two `<div>` elements throughout the document.
+- Keep the source code clean, readable, organized, and maintainable.
+- Avoid unnecessary external libraries and dependencies.
+- Embed visual assets directly in the HTML file whenever possible.
+- Ensure the website works offline, including its essential animations and interactive features.
+
+## 2. Header Design
+
+Create a full-width, dark-red header matching the reference video.
+
+Include:
+
+- A graduation-cap logo on the left.
+- The title **Training 2026** in bold white text.
+- An Arabic/English language-switching button.
+- An **Add content** button.
+- A **Clear content** button.
+
+The header must expand automatically when new content is added without overlapping the sidebar or main content.
+
+## 3. Sidebar Navigation
+
+Create a light-gray vertical sidebar on the left side of the dashboard.
+
+Include the following navigation items with small, appropriately colored icons:
+
+1. Dashboard
+2. HTML Editor
+3. CSS Styles
+4. JS Console
+5. Components
+6. Templates
+7. Snippets
+8. Projects
+9. Live Preview
+10. Responsive Design
+11. Color Palette
+12. Typography
+13. Animations
+14. Debugger
+15. Settings
+
+### Sidebar Interactions
+
+- Implement independent vertical scrolling inside the sidebar.
+- Scrolling the sidebar must not scroll the article or move the animation panels.
+- Add a subtle light-red background and dark-red text when hovering over navigation items.
+- Highlight the currently selected navigation item.
+- Ensure hover effects work smoothly without shifting the layout.
+
+### Resizable Sidebar
+
+Implement a draggable vertical divider between the sidebar and the main content.
+
+- Users must be able to drag the divider horizontally to increase or decrease the sidebar width.
+- The main content must automatically resize to occupy the remaining space.
+- Apply reasonable minimum and maximum sidebar widths.
+- Prevent the sidebar from overlapping the main content.
+- Preserve the responsive layout when resizing the browser.
+- Provide keyboard-accessible resizing where possible.
+
+## 4. Main Dashboard Layout
+
+Create two equally sized demonstration panels at the top of the main content area.
+
+The panels must:
+
+- Appear directly next to each other without a visible gap.
+- Have equal widths and heights.
+- Remain inside their respective grid columns.
+- Resize proportionally with the available space.
+- Never overlap each other.
+- Maintain correct alignment when the sidebar is resized.
+- Adapt appropriately to smaller screens.
+
+## 5. CSS Animation Panel
+
+The first panel must reproduce the animation shown in the reference video.
+
+Design requirements:
+
+- Use a rich, dark-red background.
+- Display several translucent red squares of different sizes.
+- Include both filled and outlined rounded squares.
+- Animate the squares smoothly with drifting, floating, and subtle rotational movements.
+- Position the text **CSS Animation** in the exact visual center.
+- Use bold white text.
+- Preserve the capitalization exactly: **CSS Animation**.
+- Keep the animation continuous and visually smooth.
+- Prevent animated elements from overflowing into the neighboring heart panel.
+
+## 6. Interactive 3D Anatomical Heart
+
+The second panel must display a realistic, anatomically accurate-looking human heart, closely matching the reference video.
+
+Use a pale-gray or off-white background.
+
+### Heart Appearance
+
+- Prefer a realistic 3D anatomical model rather than a flat illustration.
+- Preserve realistic heart proportions, vessels, chambers, shading, and anatomical details.
+- Center the heart horizontally and vertically.
+- Maintain its correct orientation and proportions.
+- Do not replace the realistic heart with a cartoon-style SVG.
+
+### Heart Interactions
+
+Implement the following interactions:
+
+- **Mouse drag:** Rotate the heart interactively in three-dimensional space.
+- **Mouse wheel:** Zoom in and out smoothly.
+- **Mouse click:** Enlarge the heart.
+- **Double-click:** Reset the heart to its original size and orientation.
+- **Automatic rotation:** Rotate the heart slowly when the user is not interacting with it.
+- Pause or adjust automatic rotation during manual interaction.
+- Keep the heart within its panel boundaries.
+
+### Important 3D Requirements
+
+- Use a genuine interactive 3D rendering technique rather than simply rotating a two-dimensional image.
+- Prefer an embedded 3D model and self-contained rendering resources.
+- If frames or 3D assets can be extracted from the reference video, use them appropriately to reproduce the original appearance.
+- Do not rely on externally hosted iframe viewers that may be blocked.
+- Ensure all necessary assets are available offline.
+- If a genuine 3D model cannot be embedded, clearly identify the limitation instead of presenting a flat image as fully interactive 3D.
+
+## 7. Article Section
+
+Below the two demonstration panels, create a white educational article titled:
+
+**HTML, CSS & JavaScript**
+
+Include:
+
+- A short introduction explaining the three core web technologies.
+- An orange HTML badge with its explanation.
+- A blue CSS badge with its explanation.
+- A yellow JavaScript badge with its explanation.
+- A short explanation of how HTML, CSS, and JavaScript work together.
+
+Use a layout similar to the reference video, with compact technology badges beside their corresponding descriptions.
+
+### Independent Article Scrolling
+
+The article must have its own vertical scrollbar.
+
+- Scrolling inside the article must move only the article content.
+- The heart panel must remain stationary.
+- The CSS Animation panel must remain stationary.
+- The sidebar must remain unaffected.
+- The header and footer must remain in their designated grid positions.
+- Avoid unnecessary scrolling of the entire page on desktop screens.
+
+Use appropriate CSS properties such as `overflow-y: auto`, `min-height: 0`, and CSS Grid sizing to achieve this behavior.
+
+## 8. Floating Add Button
+
+Create a small circular dark-red button containing a white plus symbol (+).
+
+Requirements:
+
+- Position it at the bottom-right corner of the dashboard, immediately above the footer.
+- Keep it in its original position, matching the reference video.
+- Do not place it inside the article's scrolling content.
+- Do not allow the button to overlap the footer.
+- Ensure its position remains consistent when scrolling the article.
+- Add a subtle hover effect.
+- Clicking it must perform the same action as the header's Add content button.
+
+## 9. Dynamic Content Management
+
+Implement the following functionality using vanilla JavaScript.
+
+### Add Content
+
+When the user clicks Add content or the floating plus button:
+
+- Append a new numbered Update row inside the header.
+- Display labels such as Update 1, Update 2, and Update 3.
+- Expand the header automatically to accommodate the new rows.
+- Preserve the CSS Grid layout.
+- Include an individual Remove button for every Update row.
+
+### Remove Content
+
+- Allow users to remove any individual Update row.
+- Update the displayed rows without reloading the page.
+- Preserve consistent numbering behavior.
+
+### Clear Content
+
+When the user clicks Clear content:
+
+- Remove all Update rows.
+- Reset the update counter to 1.
+- Return the header to its original height.
+
+## 10. English and Arabic Language Support
+
+Implement a functional language-switching button.
+
+When switching to Arabic:
+
+- Translate the header controls.
+- Translate the sidebar navigation labels.
+- Translate the Update and Remove labels.
+- Apply right-to-left (RTL) direction.
+- Mirror the dashboard layout appropriately.
+- Keep all components aligned and responsive.
+
+When switching back to English:
+
+- Restore English labels.
+- Restore left-to-right (LTR) direction.
+- Restore the original layout.
+
+**Important:** Keep the educational article content in English in both language modes.
+
+## 11. Footer
+
+Create a clean white footer at the bottom of the dashboard.
+
+Requirements:
+
+- Use a white background.
+- Use dark-gray text.
+- Add a subtle top border.
+- Include a copyright message for Training 2026.
+- List the programming languages used: HTML5, CSS3, and JavaScript.
+- List the technologies used, such as CSS Grid, Flexbox, SVG, responsive design, and 3D rendering technology if applicable.
+- List the AI tools actually used in developing the website.
+- Keep the footer aligned and readable on different screen sizes.
+
+## 12. Responsive Design
+
+Make the entire dashboard responsive across desktop, tablet, and mobile screens.
+
+Requirements:
+
+- Use flexible CSS Grid columns and responsive sizing.
+- Prevent horizontal overflow.
+- Ensure the two demonstration panels never overlap.
+- Keep the anatomical heart contained within its panel.
+- Keep the CSS Animation text centered.
+- Adapt the sidebar layout appropriately for narrow screens.
+- Preserve usable navigation and independent scrolling.
+- Adjust font sizes, spacing, and panel dimensions for smaller devices.
+- Prevent the floating plus button from covering important content.
+- Ensure resizing the sidebar does not break the layout.
+
+## 13. Accessibility and User Experience
+
+- Use native accessible buttons.
+- Provide accessible labels for interactive controls.
+- Support keyboard navigation.
+- Include visible focus indicators.
+- Support the `prefers-reduced-motion` media query.
+- Use sufficient color contrast.
+- Make interactive elements usable with both mouse and touch input where appropriate.
+
+## 14. Final Output Requirements
+
+Return the complete source code for a single `index.html` file.
+
+The final implementation must:
+
+- Closely match the visual design of `uiTask.mp4`.
+- Include the original dark-red dashboard styling.
+- Provide smooth CSS square animations.
+- Include an interactive anatomical heart with zoom and rotation functionality.
+- Support a draggable, resizable sidebar.
+- Support independent scrolling for the sidebar and article.
+- Keep the header and footer properly positioned.
+- Preserve the floating red plus button above the footer.
+- Support English and Arabic interfaces.
+- Be responsive without overlapping sections.
+- Work offline without blocked external resources.
+- Use no more than two `<div>` elements.
+- Include all HTML, CSS, and JavaScript in one file.
+
+**Generate the complete working implementation in one response without splitting the code into separate files.**
